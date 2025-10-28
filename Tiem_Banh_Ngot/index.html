@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake Shop - Đăng nhập</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="login__container">
+        <h2 class="login__title">
+          🍰 <span class="login__brand">Cake Shop</span>
+        </h2>
+        <p class="login__subtitle">Đăng Nhập</p>
+
+        <form id="loginForm" class="login__form">
+          <div class="login__group">
+            <label for="username" class="login__label">Tên đăng nhập</label>
+            <input
+              type="text"
+              id="username"
+              class="login__input"
+              placeholder="Nhập tên đăng nhập"
+              required
+            />
+          </div>
+
+          <div class="login__group">
+            <label for="password" class="login__label">Mật khẩu</label>
+            <input
+              type="password"
+              id="password"
+              class="login__input"
+              placeholder="Nhập mật khẩu"
+              required
+            />
+          </div>
+
+          <div class="login__options">
+            <label class="login__remember">
+              <input type="checkbox" class="login__checkbox" />
+              Ghi nhớ đăng nhập
+            </label>
+            <a href="#" class="login__forgot">Quên mật khẩu?</a>
+          </div>
+
+          <button type="submit" class="login__button">Đăng Nhập</button>
+
+          <p class="login__register">
+            Chưa có tài khoản?
+            <a href="#" class="login__register-link">Đăng ký ngay</a>
+          </p>
+
+          <p id="errorMessage" class="login__error"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
