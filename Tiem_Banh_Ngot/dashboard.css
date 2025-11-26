@@ -1,0 +1,120 @@
+/* ========== RESET CƠ BẢN ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ========== LAYOUT CHUNG ========== */
+.dashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #f7f7fa;
+  color: #333;
+}
+
+/* ========== SIDEBAR NGƯỜI DÙNG ========== */
+.dashboard__sidebar {
+  width: 300px;
+  background-color: #212121;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+.user__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffb347;
+  margin-bottom: 15px;
+}
+
+.user__info {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.user__logout {
+  background: linear-gradient(135deg, #ff4444, #ff7878);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.user__logout:hover {
+  background: linear-gradient(135deg, #ff6666, #ff9999);
+  transform: scale(1.05);
+}
+
+/* ========== KHU VỰC MAIN MENU ========== */
+.dashboard__main {
+  flex: 1;
+  padding: 40px 60px;
+  overflow-y: auto;
+}
+
+.dashboard__title {
+  font-size: 28px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* ========== MENU CHUNG ========== */
+.menu {
+  margin-bottom: 40px;
+}
+
+.menu__group {
+  font-size: 20px;
+  color: #ffb347;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  border-left: 4px solid #ffb347;
+  padding-left: 10px;
+}
+
+.menu__list {
+  list-style: none;
+  padding-left: 10px;
+}
+
+/* ========== MENU ITEM ========== */
+.menu__item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.menu__item:hover {
+  background: #ffb347;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* ========== TRẠNG THÁI KHI ĐƯỢC CHỌN ========== */
+.menu__item--active {
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+  color: #fff;
+  border: none;
+  transform: translateX(5px);
+  font-weight: 600;
+}

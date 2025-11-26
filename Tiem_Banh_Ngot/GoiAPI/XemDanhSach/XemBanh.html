@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xem Danh Sách Bánh</title>
+    <link rel="stylesheet" href="XemBanh.css" />
+  </head>
+  <body>
+    <div class="cakes">
+      <h2 class="cakes__title">🍰 Danh Sách Bánh Ngọt</h2>
+
+      <!-- Bộ lọc -->
+      <div class="cakes__filter">
+        <input
+          type="text"
+          id="categoryFilter"
+          class="cakes__input"
+          placeholder="Nhập loại bánh để lọc (ví dụ: Bánh ngọt)"
+        />
+        <button id="filterBtn" class="cakes__button">Lọc</button>
+      </div>
+
+      <!-- Khu vực hiển thị danh sách bánh -->
+      <div id="cakesList" class="cakes__list"></div>
+
+      <!-- Phân trang -->
+      <div class="cakes__pagination">
+        <button id="prevPage" class="cakes__page-btn">◀ Trước</button>
+        <span id="pageInfo" class="cakes__page-info"></span>
+        <button id="nextPage" class="cakes__page-btn">Tiếp ▶</button>
+      </div>
+    </div>
+
+    <script src="XemBanh.js"></script>
+  </body>
+</html>
