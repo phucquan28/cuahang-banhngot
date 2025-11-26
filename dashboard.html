@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake Shop - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- ========== Sidebar hiển thị thông tin người dùng ========== -->
+      <aside class="dashboard__sidebar">
+        <div class="user">
+          <img
+            id="userAvatar"
+            class="user__avatar"
+            src="https://via.placeholder.com/100"
+            alt="Avatar"
+          />
+          <div class="user__info">
+            <p><strong>ID:</strong> <span id="userId"></span></p>
+            <p><strong>Tên:</strong> <span id="userFullName"></span></p>
+            <p><strong>Email:</strong> <span id="userEmail"></span></p>
+          </div>
+          <button id="logoutBtn" class="user__logout">Đăng xuất</button>
+        </div>
+      </aside>
+
+      <!-- ========== Main menu chính ========== -->
+      <main class="dashboard__main">
+        <h2 class="dashboard__title">Danh sách hành động API</h2>
+
+        <!-- Nhóm 1: Authentication -->
+        <section class="menu menu--auth">
+          <h3 class="menu__group">Authentication</h3>
+          <ul class="menu__list">
+            <li class="menu__item menu__item--register">Đăng ký tài khoản mới</li>
+            <li class="menu__item menu__item--login">Đăng nhập hệ thống</li>
+            <li class="menu__item menu__item--profile">Xem thông tin người dùng</li>
+          </ul>
+        </section>
+
+        <!-- Nhóm 2: Cakes -->
+        <section class="menu menu--cakes">
+          <h3 class="menu__group">Quản lý bánh ngọt</h3>
+          <ul class="menu__list">
+            <li class="menu__item menu__item--add">Thêm bánh ngọt mới</li>
+            <li class="menu__item menu__item--list">Xem danh sách bánh</li>
+            <li class="menu__item menu__item--mycakes">Xem bánh của tôi</li>
+            <li class="menu__item menu__item--detail">Xem chi tiết bánh</li>
+            <li class="menu__item menu__item--update">Cập nhật thông tin bánh</li>
+            <li class="menu__item menu__item--delete">Xóa bánh</li>
+            <li class="menu__item menu__item--categories">Xem danh mục bánh</li>
+            <li class="menu__item menu__item--search">Tìm kiếm bánh</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

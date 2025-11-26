@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thêm Bánh Mới</title>
+    <link rel="stylesheet" href="ThemBanhMoi.css" />
+  </head>
+  <body>
+    <div class="addcake">
+      <div class="addcake__container">
+        <h2 class="addcake__title">🍰 Thêm Bánh Mới</h2>
+
+        <form id="addCakeForm" class="addcake__form">
+          <div class="addcake__group">
+            <label for="cakeName" class="addcake__label">Tên bánh</label>
+            <input
+              type="text"
+              id="cakeName"
+              class="addcake__input"
+              placeholder="Nhập tên bánh"
+              required
+            />
+          </div>
+
+          <div class="addcake__group">
+            <label for="cakeCategory" class="addcake__label">Danh mục</label>
+            <input
+              type="text"
+              id="cakeCategory"
+              class="addcake__input"
+              placeholder="Nhập danh mục bánh"
+              required
+            />
+          </div>
+
+          <div class="addcake__group">
+            <label for="cakePrice" class="addcake__label">Giá (VNĐ)</label>
+            <input
+              type="number"
+              id="cakePrice"
+              class="addcake__input"
+              placeholder="Nhập giá bánh"
+              required
+            />
+          </div>
+
+          <div class="addcake__group">
+            <label for="cakeImage" class="addcake__label">Ảnh (URL)</label>
+            <input
+              type="url"
+              id="cakeImage"
+              class="addcake__input"
+              placeholder="https://example.com/cake.jpg"
+              required
+            />
+          </div>
+
+          <div class="addcake__group">
+            <label for="cakeDescription" class="addcake__label">Mô tả</label>
+            <textarea
+              id="cakeDescription"
+              class="addcake__textarea"
+              placeholder="Nhập mô tả ngắn gọn về bánh..."
+              rows="4"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="addcake__button">Tạo bánh</button>
+
+          <p id="responseMessage" class="addcake__message"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="ThemBanhMoi.js"></script>
+  </body>
+</html>
